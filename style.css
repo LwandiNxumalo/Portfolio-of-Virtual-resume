@@ -476,3 +476,104 @@ footer {
   max-width: 100%;
   height: auto;
 }
+
+/* --- Scroll Reveal Animations --- */
+.contact-container,
+.about-container,
+.section-title {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Class added dynamically by script.js */
+.contact-container.visible,
+.about-container.visible,
+.section-title.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- Navbar & Mobile Menu Base --- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hide Hamburger Button on Desktop */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--text-color, #f8fafc);
+  border-radius: 2px;
+}
+
+/* --- Mobile Responsiveness (Screen size < 768px) --- */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* Show hamburger button on mobile */
+  }
+
+  /* Transform Menu into Dropdown Overlay */
+  .nav-menu {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    flex-direction: column;
+    background-color: var(--bg-color, #0f172a);
+    width: 100%;
+    padding: 1.5rem 0;
+    text-align: center;
+    gap: 1.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+    
+    /* Smooth Dropdown Animation */
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  /* Active Class added by JS when opened */
+  .nav-menu.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  /* Animated "X" Transformation for Hamburger Bars */
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
