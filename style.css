@@ -348,6 +348,8 @@ main {
 /* --- Contact Section --- */
 .contact-container {
   max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .contact-intro {
@@ -373,7 +375,8 @@ main {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  outline: 1px solid var(--accent-blue);
+  outline: none;
+  border-color: var(--accent-blue, #38bdf8);
 }
 
 .social-links {
@@ -450,4 +453,26 @@ footer {
   border-color: var(--accent-blue);
   transform: translateY(-3px); /* Subtle lift effect */
   background-color: rgba(56, 189, 248, 0.1);
+}
+
+.btn-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: var(--accent-blue);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: opacity 0.2s ease;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+  opacity: 0.85;
+}
+
+.timeline-content img {
+  image-rendering: -webkit-optimize-contrast; /* Sharpen edges in WebKit browsers */
+  image-rendering: crisp-edges;
+  max-width: 100%;
+  height: auto;
 }
