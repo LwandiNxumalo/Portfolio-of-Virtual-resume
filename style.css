@@ -164,11 +164,61 @@ main {
 }
 
 /* --- About Section --- */
+/* --- Newspaper-style Text Wrapping --- */
 .about-container {
   color: var(--text-muted);
   font-size: 1.1rem;
   line-height: 1.8;
-  max-width: 800px;
+  max-width: 900px;
+}
+
+.about-image {
+  float: left;            /* Floats the image to the left */
+  margin-right: 2rem;     /* Space between image and text on the right */
+  margin-bottom: 1rem;    /* Space below image when text wraps beneath it */
+  width: 280px;           /* Fixed width for the picture container */
+}
+
+.about-image img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #334155;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+.about-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.about-image img:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-blue);
+  opacity: 10s;
+}
+
+.about-text {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.about-text p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Optional: Mobile Responsiveness */
+@media (max-width: 600px) {
+  .about-image {
+    float: none;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto 1.5rem auto;
+  }
 }
 
 /* --- Resume Timeline --- */
