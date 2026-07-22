@@ -10,7 +10,183 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        
+        <header>
+            <div id="container">
+                <div id="home-initial">
+                    <p><b>LN</b></p>
+                </div>
+                <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume"><em>Resume/CV</em></a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            </div>
+            
+        </header>
+
+        <main>
+            <!-- 1. HOME / HERO SECTION -->
+            <section id="home" class="hero-section">
+                <div class="hero-content">
+                    <p class="greeting">Hi, my name is</p>
+                    <h1>Lwandi Nxumalo</h1>
+                    <h2>Software Developer & Tech Enthusiast</h2>
+                    <p class="bio-summary">I build fast, responsive, and user-friendly web applications using fundamental web technologies.</p>
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. ABOUT ME SECTION -->
+            <section id="about" class="section">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-container">
+                    <p>Welcome! I'm a passionate developer focused on building digital experiences that are clean, performant, and accessible. I love solving complex problems using clean code and modern design practices.</p>
+                    <p>When I'm not coding, you can find me exploring new technologies, refining my problem-solving skills, and building personal projects to expand my software architecture knowledge.</p>
+                </div>
+            </section>
+
+            <!-- 3. RESUME / CV SECTION -->
+            <section id="resume" class="section">
+                <h2 class="section-title">Resume & Experience</h2>
+                <div class="timeline">
+                    <!-- Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024 - Present</div>
+                        <div class="timeline-content">
+                            <h3>BSc in Information Technology</h3>
+                            <h4>North-West University</h4>
+                            <p>Focused on software development, data structures, algorithm design, and modern database management.</p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">2023 - 2024</div>
+                        <div class="timeline-content">
+                            <h3>Frontend Web Development</h3>
+                            <h4>Personal & Academic Projects</h4>
+                            <p>Designed and deployed fully responsive web applications using semantic HTML, custom CSS variables, and modular vanilla JavaScript.</p>
+                        </div>
+                    </div>
+                    <!-- Academic & Key Achievements Card -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">Key Highlights</div>
+                        <div class="timeline-content">
+                            <h3>Academic Achievements & Milestone Accomplishments</h3>
+                            <ul class="achievements-list">
+                                <li><strong>CMPG122 (C# Programming):</strong> Achieved Distinction (77%)</li>
+                                <li><strong>STTN111 (Statistics):</strong> Achieved Distinction (79%)</li>
+                                <li>Maintained a strong academic average across core IT and Statistics modules.</li>
+                                <li>Designed and built a <strong>Personal Finance Tracker Application</strong> applying OOP principles and database management.</li>
+                                <li>Hands-on experience in <strong>Relational Database Design</strong> using Oracle SQL Developer.</li>
+                                <li>Completed end-to-end coding projects using C++, C#, Java, and SQL.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. PROJECTS SECTION -->
+            <section id="projects" class="section">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project Card 1 -->
+                    <div class="project-card">
+                        <h3>Virtual CV / Portfolio</h3>
+                        <p>An interactive, responsive portfolio website showcasing my technical journey, skills, and background without framework overhead.</p>
+                        <div class="tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/LwandiNxumalo/Portfolio-of-Virtual-resume" target="_blank" rel="noopener">GitHub Repo</a>
+                            <a href="#" target="_blank" rel="noopener">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="project-card">
+                        <h3>Task Manager App</h3>
+                        <p>A browser-based task management web tool featuring local storage persistence and interactive filtering.</p>
+                        <div class="tags">
+                            <span>HTML5</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener">GitHub Repo</a>
+                            <a href="#" target="_blank" rel="noopener">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. SKILLS SECTION -->
+            <section id="skills" class="section">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <!-- Languages & OOP -->
+                    <div class="skill-card">
+                        <h3>Languages & Paradigms</h3>
+                        <div class="badges">
+                            <span class="badge">Python</span>
+                            <span class="badge">Java (OOP)</span>
+                            <span class="badge">C#</span>
+                            <span class="badge">JavaScript</span>
+                            <span class="badge">HTML5/CSS</span>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks & Web -->
+                    <div class="skill-card">
+                        <h3>Frameworks & Technologies</h3>
+                        <div class="badges">
+                            <span class="badge">.NET Framework</span>
+                            <span class="badge">ASP.NET Web Forms</span>
+                            <span class="badge">Debugging</span>
+                        </div>
+                    </div>
+
+                    <!-- Databases & Architecture -->
+                    <div class="skill-card">
+                        <h3>Databases & Architecture</h3>
+                        <div class="badges">
+                            <span class="badge">SQL Database</span>
+                            <span class="badge">Oracle SQL Developer</span>
+                            <span class="badge">Relational Database Design</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. CONTACT SECTION -->
+            <section id="contact" class="section">
+                <h2 class="section-title">Contact Information</h2>
+                <div class="contact-container">
+                    <p class="contact-intro">Feel free to reach out if you'd like to collaborate, ask a question, or connect!</p>
+                    
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+
+                    <div class="social-links">
+                        <a href="mailto:your.email@example.com">Email</a> •
+                        <a href="https://github.com/LwandiNxumalo" target="_blank" rel="noopener">GitHub</a> •
+                        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+                    </div>
+                </div>
+            </section>
+        </main>
         <script src="main.js"></script>
     </body>
 </html>
