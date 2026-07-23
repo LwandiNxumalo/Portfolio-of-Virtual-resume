@@ -86,6 +86,11 @@ main {
   padding: 0 2rem;
 }
 
+/*Adding the offset so that section header isn't hidden under the fixed navbar*/
+section {
+  scroll-margin-top: 80px;
+}
+
 .section {
   padding: 5rem 0;
   border-bottom: 1px solid #334155;
