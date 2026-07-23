@@ -554,7 +554,7 @@ footer {
     text-align: center;
     gap: 1.5rem;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
-    
+    z-index: 1000;
     /* Smooth Dropdown Animation */
     opacity: 0;
     transform: translateY(-10px);
