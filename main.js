@@ -52,3 +52,55 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+window.addEventListener("pageshow", () => {
+  const contactForm = document.querySelector(".contact-form");
+  if (contactForm) {
+    contactForm.reset();
+  }
+});
+
+const contactForm = document.querySelector(".contact-form");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", async function(e) {
+    e.preventDefault(); // Stop page redirect to Formspree
+    
+    const formData = new FormData(contactForm);
+    const button = contactForm.querySelector("button[type='submit']");
+    const originalText = button.textContent;
+    
+    // UI feedback while sending
+    button.textContent = "Sending...";
+    button.disabled = true;
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        // Clear form smoothly & show confirmation
+        contactForm.reset();
+        button.textContent = "Message Sent! ✓";
+        button.style.backgroundColor = "#22c55e"; // Success green
+
+        setTimeout(() => {
+          button.textContent = originalText;
+          button.style.backgroundColor = "";
+          button.disabled = false;
+        }, 4000);
+      } else {
+        button.textContent = "Error! Try Again";
+        button.disabled = false;
+      }
+    } catch (error) {
+      button.textContent = "Error! Try Again";
+      button.disabled = false;
+    }
+  });
+}
+

@@ -245,15 +245,17 @@
                 </div>
             </section>
 
-            <section id="contact" class="section">
+            <section class="section">
                 <h2 class="section-title">Let's connect</h2>
                 <div class="contact-container">
                     <p class="contact-intro">Feel free to reach out if you'd like to collaborate, ask a question, or connect!</p>
                     
-                    <form class="contact-form">
+                    <form class="contact-form" action="https://formspree.io/f/mgoglbay" method="POST">
+                        <input type="hidden" name="_next" value="https://lwandinxumalo.github.io/Portfolio-of-Virtual-resume/#contact">
                         <input type="text" name="name" placeholder="Your Name" aria-label="Your Name" required>
                         <input type="email" name="email" placeholder="Your Email" aria-label="Your Email" required>
                         <textarea name="message" rows="5" placeholder="Your Message" aria-label="Your Message" required></textarea>
+                        
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
 
@@ -290,7 +292,7 @@
                     </a>
                 </div>
             </div>
-            </footer>
+        </footer>
         <script src="main.js"></script>
     </body>
 </html>
