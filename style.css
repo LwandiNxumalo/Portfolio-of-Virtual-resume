@@ -712,3 +712,51 @@ footer {
   opacity: 1;
   transform: translate(2px, -2px);
 }
+
+/* --- Skills Progress Bar Styles --- */
+.skill-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-top: 1rem;
+}
+
+.skill-item {
+    width: 100%;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.skill-name {
+    color: var(--text-color, #e2e8f0);
+}
+
+.skill-percentage {
+    color: var(--primary-color, #38bdf8);
+    font-family: monospace;
+    font-size: 0.85rem;
+}
+
+/* Base track line */
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* Filled active loading line */
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #2563eb, #38bdf8); /* Modern blue gradient */
+    border-radius: 4px;
+    transition: width 1s ease-in-out;
+}
