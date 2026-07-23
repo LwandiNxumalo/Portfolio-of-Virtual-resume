@@ -9,7 +9,7 @@ Welcome to my personal portfolio website! This site serves as my virtual CV to s
 
 ##  Live Demo
 
-You can view the live website here: [Link coming up]
+You can view the live website here: https://lwandinxumalo.github.io/Portfolio-of-Virtual-resume/
 
 ---
 
@@ -33,6 +33,6 @@ You can view the live website here: [Link coming up]
 
 ##  Contact Info
 
-- **Email:** xolanilwandile3@gmail.com / 50387405@mynwu.co.za
+- **Email:** xolanilwandile3@gmail.com / 50387405@mynwu.ac.za
 - **LinkedIn:** Lwandile Xolani Nxumalo(https://linkedin.com/in/lwandi-xolani-nxumalo-aa9914360)
 - **GitHub:** Lwandile Nxumalo(https://github.com/LwandiNxumalo)
